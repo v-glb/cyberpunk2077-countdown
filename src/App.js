@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Heading, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
+import Countdown from './components/Countdown/Countdown';
+import { Row } from 'arwes/lib/Grid';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={createTheme()}>
+      <Arwes background='/cyber-bg.png' pattern='/glow.png' animate>
+        <div className='App'>
+          <Row col s={6} m={4} offset={['s3', 'm4']}>
+            <Heading node='h1'>Cyberpunk 2077 - Countdown</Heading>
+          </Row>
+          <Row col s={6} m={6} offset={['s3', 'm3']}>
+            <Frame
+              animate={true}
+              level={3}
+              corners={4}
+              layer='primary'
+            >
+              <Countdown />
+            </Frame>
+          </Row>
+          <Footer style={{ position: 'absolute', bottom: 0 }} animate >
+            <p>Footer?</p>
+          </Footer>
+        </div>
+      </Arwes>
+    </ThemeProvider >
   );
 }
 
