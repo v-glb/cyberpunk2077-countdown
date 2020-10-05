@@ -25,7 +25,8 @@ export default class Countdown extends Component {
 
       if (distance <= 0) {
         clearInterval(this.interval);
-        console.log('today is the release!');
+        // Tell App.js that released is now true
+        this.props.releaseHandler(true);
       }
 
       this.setState({
