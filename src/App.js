@@ -10,7 +10,7 @@ function App() {
       <Arwes background='/cyber-bg.png' pattern='/glow.png' animate>
         <div className='App'>
           <Row col s={6} m={6} offset={['s3', 'm3']}>
-            <Heading style={{ textAlign: 'center' }} node='h1'>Cyberpunk 2077 Release</Heading>
+            <Heading node='h1'>Cyberpunk 2077 Release</Heading>
             <Frame
               animate={true}
               level={3}
