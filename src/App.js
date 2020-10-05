@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
+import { Link, Heading, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
 import Countdown from './components/Countdown/Countdown';
 import { Row } from 'arwes/lib/Grid';
 import './App.css';
@@ -23,7 +23,7 @@ function App() {
             </Frame>
           </Row>
           <Footer style={{ position: 'absolute', bottom: 0 }} animate >
-            <p>Footer?</p>
+            <Link href='https://github.com/v-glb/cyberpunk2077-countdown'>Github</Link>
           </Footer>
         </div>
       </Arwes>
