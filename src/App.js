@@ -7,6 +7,13 @@ import bgImage from './images/cyber-bg.png';
 import glowImage from './images/glow.png';
 import deploySound from './sounds/deploy.mp3';
 
+const theme = {
+  typography: {
+    headerFontFamily: '"Electrolize", "sans-serif"',
+    fontFamily: '"Titillium Web", "sans-serif"'
+  }
+};
+
 const sounds = {
   shared: { volume: 1, },
   players: {
@@ -24,7 +31,7 @@ function App() {
   }
 
   return (
-    <ThemeProvider theme={createTheme()}>
+    <ThemeProvider theme={createTheme(theme)}>
       <SoundsProvider sounds={createSounds(sounds)}>
         <Arwes background={bgImage} pattern={glowImage} animate>
           <Header animate>
