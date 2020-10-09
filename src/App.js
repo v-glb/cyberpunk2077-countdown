@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, SoundsProvider, createSounds, Link, Header, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
+import { SoundsProvider, createSounds, Link, Header, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
 import Countdown from './components/Countdown/Countdown';
 import ReleaseMsg from './components/ReleaseMsg/ReleaseMsg';
 import './App.css';
@@ -25,7 +25,7 @@ function App() {
       <SoundsProvider sounds={createSounds(sounds)}>
         <Arwes background='/cyber-bg.png' pattern='/glow.png' animate>
           <Header animate>
-            <h1 style={{ textAlign: 'center', marginTop: '50px' }} >
+            <h1 style={{ textShadow: '0 0 4px rgba(161,236,251,0.65)', textAlign: 'center', marginTop: '50px',  }} >
               Cyberpunk 2077 Release
             </h1>
           </Header>
