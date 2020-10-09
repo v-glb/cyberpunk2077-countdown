@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, SoundsProvider, createSounds, Link, Heading, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
+import { Row, SoundsProvider, createSounds, Link, Header, Arwes, Frame, ThemeProvider, createTheme, Footer } from 'arwes';
 import Countdown from './components/Countdown/Countdown';
 import ReleaseMsg from './components/ReleaseMsg/ReleaseMsg';
 import './App.css';
@@ -24,28 +24,31 @@ function App() {
     <ThemeProvider theme={createTheme()}>
       <SoundsProvider sounds={createSounds(sounds)}>
         <Arwes background='/cyber-bg.png' pattern='/glow.png' animate>
+          <Header animate>
+            <h1 style={{ textAlign: 'center', marginTop: '50px' }} >
+              Cyberpunk 2077 Release
+            </h1>
+          </Header>
           <div className='App'>
-            <Row col s={6} m={6} offset={['s3', 'm3']}>
-              <Heading node='h1'>Cyberpunk 2077 Release</Heading>
-              <Frame
-                level={3}
-                corners={4}
-                layer='primary'
-              >
-                {
-                  released ?
-                    <ReleaseMsg />
-                    :
-                    <Countdown releaseHandler={handleReleased} />
-                }
-              </Frame>
-            </Row>
-            <Footer style={{ position: 'absolute', bottom: 0 }}>
+            <Frame
+              level={3}
+              corners={4}
+              layer='primary'
+              style={{ margin: 'auto' }}
+            >
+              {
+                released ?
+                  <ReleaseMsg />
+                  :
+                  <Countdown releaseHandler={handleReleased} />
+              }
+            </Frame>
+            <Footer style={{ bottom: 0 }}>
               <Link href='https://github.com/v-glb/cyberpunk2077-countdown'>Github</Link>
             </Footer>
           </div>
         </Arwes>
-      </SoundsProvider>
+      </SoundsProvider >
     </ThemeProvider >
   );
 }
