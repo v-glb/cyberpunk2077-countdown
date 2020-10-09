@@ -3,12 +3,15 @@ import { SoundsProvider, createSounds, Link, Header, Arwes, Frame, ThemeProvider
 import Countdown from './components/Countdown/Countdown';
 import ReleaseMsg from './components/ReleaseMsg/ReleaseMsg';
 import './App.css';
+import bgImage from './images/cyber-bg.png';
+import glowImage from './images/glow.png';
+import deploySound from './sounds/deploy.mp3';
 
 const sounds = {
   shared: { volume: 1, },
   players: {
     deploy: {
-      sound: { src: ['/deploy.mp3'] },
+      sound: { src: [deploySound] },
     },
   }
 };
@@ -23,9 +26,9 @@ function App() {
   return (
     <ThemeProvider theme={createTheme()}>
       <SoundsProvider sounds={createSounds(sounds)}>
-        <Arwes background='/cyber-bg.png' pattern='/glow.png' animate>
+        <Arwes background={bgImage} pattern={glowImage} animate>
           <Header animate>
-            <h1 style={{ textShadow: '0 0 4px rgba(161,236,251,0.65)', textAlign: 'center', marginTop: '50px',  }} >
+            <h1 style={{ textShadow: '0 0 4px rgba(161,236,251,0.65)', textAlign: 'center', marginTop: '50px', }} >
               Cyberpunk 2077 Release
             </h1>
           </Header>
