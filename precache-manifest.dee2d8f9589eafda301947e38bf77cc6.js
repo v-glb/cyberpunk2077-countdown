@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c504626d93171b2b45d9a443e4eefd59",
+    "revision": "4a016645c1a5b051efb6b0b79f0dd968",
     "url": "/cyberpunk2077-countdown/index.html"
   },
   {
