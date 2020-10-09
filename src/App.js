@@ -44,7 +44,7 @@ function App() {
               }
             </Frame>
             <Footer style={{ bottom: 0 }}>
-              <Link href='https://github.com/v-glb/cyberpunk2077-countdown'>Github</Link>
+              <Link href='https://github.com/v-glb/cyberpunk2077-countdown'>Built by V</Link>
             </Footer>
           </div>
         </Arwes>
