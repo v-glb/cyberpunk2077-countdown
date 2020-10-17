@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a016645c1a5b051efb6b0b79f0dd968",
+    "revision": "e6df405f61298cfd83f7e4135f170c5e",
     "url": "/cyberpunk2077-countdown/index.html"
   },
   {
-    "revision": "686f3d00ada59f9cd47a",
-    "url": "/cyberpunk2077-countdown/static/css/main.a60d977e.chunk.css"
+    "revision": "075f83aee349645c1a28",
+    "url": "/cyberpunk2077-countdown/static/css/main.7ae42d1a.chunk.css"
   },
   {
-    "revision": "36dc95f7a4a955285490",
-    "url": "/cyberpunk2077-countdown/static/js/2.560f49fe.chunk.js"
+    "revision": "aae00472e4ec16eb1420",
+    "url": "/cyberpunk2077-countdown/static/js/2.10902187.chunk.js"
   },
   {
-    "revision": "ee8909476e1daa379d46b6d7286404f2",
-    "url": "/cyberpunk2077-countdown/static/js/2.560f49fe.chunk.js.LICENSE.txt"
+    "revision": "cf33ee21aa0f8350f59dc64ee09f72a0",
+    "url": "/cyberpunk2077-countdown/static/js/2.10902187.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "686f3d00ada59f9cd47a",
-    "url": "/cyberpunk2077-countdown/static/js/main.b099861f.chunk.js"
+    "revision": "075f83aee349645c1a28",
+    "url": "/cyberpunk2077-countdown/static/js/main.482d9e1e.chunk.js"
   },
   {
     "revision": "ebbb98b599f640c8a04b",

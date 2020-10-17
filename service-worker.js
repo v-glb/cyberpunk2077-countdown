@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cyberpunk2077-countdown/precache-manifest.dee2d8f9589eafda301947e38bf77cc6.js"
+  "/cyberpunk2077-countdown/precache-manifest.d0eb7cc2473d8f7192629c1dc7f4c331.js"
 );
 
 self.addEventListener('message', (event) => {
