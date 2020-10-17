@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Loading } from 'arwes';
+import {
+  BrowserView,
+  MobileView,
+} from "react-device-detect";
 import './Countdown.css';
 
 const second = 1000
@@ -50,12 +54,24 @@ export default class Countdown extends Component {
         {this.state.loading ?
           <Loading animate />
           :
-          <ul>
-            <li><span>{this.state.daysToRelease}</span> Days</li>
-            <li><span>{this.state.hoursToRelease}</span> Hours</li>
-            <li><span>{this.state.minutesToRelease}</span> Minutes</li>
-            <li><span>{this.state.secondsToRelease}</span> Seconds</li>
-          </ul>
+          <div>
+            <BrowserView>
+              <ul>
+                <li><span>{this.state.daysToRelease}</span> Days</li>
+                <li><span>{this.state.hoursToRelease}</span> Hours</li>
+                <li><span>{this.state.minutesToRelease}</span> Minutes</li>
+                <li><span>{this.state.secondsToRelease}</span> Seconds</li>
+              </ul>
+            </BrowserView>
+            <MobileView>
+              <ul style={{display: 'inline-block', margin: '0', padding: '0'}}>
+                <li><span>{this.state.daysToRelease}</span> Days</li>
+                <li><span>{this.state.hoursToRelease}</span> Hours</li>
+                <li><span>{this.state.minutesToRelease}</span> Minutes</li>
+                <li><span>{this.state.secondsToRelease}</span> Seconds</li>
+              </ul>
+            </MobileView>
+          </div>
         }
       </div>
     )

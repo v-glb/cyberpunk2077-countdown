@@ -6,6 +6,11 @@ import './App.css';
 import bgImage from './images/cyber-bg.png';
 import glowImage from './images/glow.png';
 import deploySound from './sounds/deploy.mp3';
+import { Row } from 'arwes/lib/Grid';
+import {
+  BrowserView,
+  MobileView,
+} from "react-device-detect";
 
 const theme = {
   typography: {
@@ -40,23 +45,33 @@ function App() {
             </h1>
           </Header>
           <div className='App'>
-            <Frame
-              level={3}
-              corners={4}
-              layer='primary'
-              style={{ margin: 'auto' }}
-            >
-              {
-                released ?
-                  <ReleaseMsg />
-                  :
-                  <Countdown releaseHandler={handleReleased} />
-              }
-            </Frame>
-            <Footer style={{ bottom: 0 }}>
+            <Row col s={12}>
+              <Frame
+                level={3}
+                corners={4}
+                layer='primary'
+                style={{ margin: 'auto' }}
+              >
+                {
+                  released ?
+                    <ReleaseMsg />
+                    :
+                    <Countdown releaseHandler={handleReleased} />
+                }
+              </Frame>
+            </Row>
+
+          </div>
+          <BrowserView>
+            <Footer style={{ textAlign: 'center', position: 'absolute', bottom: '0px', width: '100%'}}>
               <Link href='https://github.com/v-glb/cyberpunk2077-countdown'>Built by V</Link>
             </Footer>
-          </div>
+          </BrowserView>
+          <MobileView>
+            <Footer style={{ textAlign: 'center' }}>
+              <Link href='https://github.com/v-glb/cyberpunk2077-countdown'>Built by V</Link>
+            </Footer>
+          </MobileView>
         </Arwes>
       </SoundsProvider >
     </ThemeProvider >
