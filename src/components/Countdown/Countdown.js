@@ -13,7 +13,7 @@ const day = hour * 24;
 
 export default class Countdown extends Component {
   state = {
-    releaseDate: new Date('Nov 19, 2020 00:00:00').getTime(),
+    releaseDate: new Date('Dec 10, 2020 00:00:00').getTime(),
     daysToRelease: null,
     hoursToRelease: null,
     minutesToRelease: null,
