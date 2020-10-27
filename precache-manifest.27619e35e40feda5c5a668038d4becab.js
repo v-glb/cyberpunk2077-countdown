@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6df405f61298cfd83f7e4135f170c5e",
+    "revision": "506ae696fd17a8fd882ebfab38a58961",
     "url": "/cyberpunk2077-countdown/index.html"
   },
   {
-    "revision": "075f83aee349645c1a28",
+    "revision": "9e441cf4d1dd79106d84",
     "url": "/cyberpunk2077-countdown/static/css/main.7ae42d1a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cyberpunk2077-countdown/static/js/2.10902187.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "075f83aee349645c1a28",
-    "url": "/cyberpunk2077-countdown/static/js/main.482d9e1e.chunk.js"
+    "revision": "9e441cf4d1dd79106d84",
+    "url": "/cyberpunk2077-countdown/static/js/main.136cae53.chunk.js"
   },
   {
     "revision": "ebbb98b599f640c8a04b",
